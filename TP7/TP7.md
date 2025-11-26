@@ -65,10 +65,10 @@ cat /proc/irq/IRQ_NUMBER/smp_affinity
 Replace `IRQ_NUMBER` with your chosen interrupt number (e.g., `29`).
 
 The value is a hexadecimal bitmask:
-*   `ffffffff` = all cores enabled
-*   `00000001` = CPU0 only
-*   `00000002` = CPU1 only
-*   `00000003` = CPU0 and CPU1
+*   `f` = all cores enabled
+*   `1` = CPU0 only
+*   `2` = CPU1 only
+*   `3` = CPU0 and CPU1
 
 2.  **Restrict interrupt handling to CPU0:**
 
